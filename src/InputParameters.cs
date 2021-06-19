@@ -14,6 +14,7 @@ namespace Landis.Extension.BiomassHarvest
         : InputParameters, IParameters
     {
         private string biomassMapNamesTemplate;
+        private bool exposeManagementAreas;
 
         //---------------------------------------------------------------------
         /// <summary>
@@ -34,6 +35,15 @@ namespace Landis.Extension.BiomassHarvest
                     MapNames.CheckTemplateVars(value);
                 }
                 biomassMapNamesTemplate = value;
+            }
+        }
+
+        public bool ExposeManagementAreasForSites
+        {
+            get => exposeManagementAreas;
+            set
+            {
+                exposeManagementAreas = value;
             }
         }
 
