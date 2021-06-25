@@ -7,7 +7,7 @@
     <AssemblyCompany>Landis-II-Foundation</AssemblyCompany>
     <AssemblyProduct>Landis.Extension.BiomassHarvest-v4</AssemblyProduct>
     <AssemblyCopyright>Landis-II-Foundation</AssemblyCopyright>
-    <AssemblyVersion>4.4.0</AssemblyVersion>
+    <AssemblyVersion>4.4.1</AssemblyVersion>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <RepositoryUrl>https://github.com/LANDIS-II-Foundation/Extension-Biomass-Harvest</RepositoryUrl>
@@ -22,7 +22,7 @@
     <PackageTags>LANDIS-II;Landis;Extension;Biomass Harvest</PackageTags>
     <Description></Description>
     <PackageReleaseNotes></PackageReleaseNotes>
-    <FileVersion>4.4.0.0</FileVersion>
+    <FileVersion>4.4.1.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -58,5 +58,9 @@
       <HintPath>lib\Landis.Library.Succession-v8.dll</HintPath>
     </Reference>
   </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="$(ProjectDir)postbuild.bat $(Configuration)" />
+  </Target>
 
 </Project>

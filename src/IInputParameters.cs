@@ -19,5 +19,13 @@ namespace Landis.Extension.BiomassHarvest
             get;
         }
 
+        /// <summary>
+        /// If set to true, BHE should expose site variable "ManagementArea" for all sites which are included
+        /// into a management area.
+        /// </summary>
+        bool ExposeManagementAreasForSites
+        {
+            get;
+        }
     }
 }

@@ -6,6 +6,7 @@
 using Landis.SpatialModeling;
 using Landis.Library.BiomassCohorts;
 using Landis.Library.Biomass;
+using Landis.Library.HarvestManagement;
 using Landis.Core;
 using System.Collections.Generic;
 
@@ -21,9 +22,11 @@ namespace Landis.Extension.BiomassHarvest
         private static ISiteVar<Landis.Library.BiomassCohorts.ISiteCohorts> cohorts;
         private static ISiteVar<IDictionary<ISpecies, int>> biomassBySpecies;
 
+        private static ISiteVar<ManagementArea> managementArea;
+
         //---------------------------------------------------------------------
 
-        public static void Initialize()
+        public static void Initialize(IParameters parameters)
         {
             woodyDebris = PlugIn.ModelCore.GetSiteVar<Pool>("Succession.WoodyDebris");
             litter = PlugIn.ModelCore.GetSiteVar<Pool>("Succession.Litter");
@@ -38,13 +41,17 @@ namespace Landis.Extension.BiomassHarvest
 
             PlugIn.ModelCore.RegisterSiteVar(SiteVars.CapacityReduction, "Harvest.CapacityReduction");
 
+            if (parameters.ExposeManagementAreasForSites)
+            {
+                managementArea = PlugIn.ModelCore.Landscape.NewSiteVar<ManagementArea>();
+                PlugIn.ModelCore.RegisterSiteVar(SiteVars.ManagementArea, "BiomassHarvest.ManagementArea");
+            }
+
             if (cohorts == null)
             {
                 string mesg = string.Format("Cohorts are empty.  Please double-check that this extension is compatible with your chosen succession extension.");
                 throw new System.ApplicationException(mesg);
             }
-
-
         }
         //---------------------------------------------------------------------
         public static ushort GetMaxAge(ActiveSite site)
@@ -121,5 +128,15 @@ namespace Landis.Extension.BiomassHarvest
             }
         }
 
+        /// <summary>
+        /// Management area which a site belongs to.
+        /// </summary>
+        public static ISiteVar<ManagementArea> ManagementArea
+        {
+            get
+            {
+                return managementArea;
+            }
+        }
     }
 }

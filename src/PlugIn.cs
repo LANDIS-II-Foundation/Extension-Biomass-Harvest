@@ -42,10 +42,7 @@ namespace Landis.Extension.BiomassHarvest
         static double[] totalBiomassRemoved;
 
         private static IParameters parameters;
-
         private static ICore modelCore;
-
-
 
         //---------------------------------------------------------------------
 
@@ -117,11 +114,15 @@ namespace Landis.Extension.BiomassHarvest
             //event_id = 1;
             HarvestMgmtLib.SiteVars.GetExternalVars();
             MetadataHandler.InitializeMetadata(parameters.Timestep, parameters.PrescriptionMapNames, parameters.EventLog, parameters.SummaryLog);
-            SiteVars.Initialize();
+            SiteVars.Initialize(parameters);
             Timestep = parameters.Timestep;
+
             managementAreas = parameters.ManagementAreas;
             ModelCore.UI.WriteLine("   Reading management-area map {0} ...", parameters.ManagementAreaMap);
             ManagementAreas.ReadMap(parameters.ManagementAreaMap, managementAreas);
+            ModelCore.UI.WriteLine("   Known management areas:");
+            foreach (var managementArea in managementAreas)
+                ModelCore.UI.WriteLine("     {0}", managementArea.MapCode);
 
             ModelCore.UI.WriteLine("   Reading stand map {0} ...", parameters.StandMap);
             Stands.ReadMap(parameters.StandMap);
@@ -132,13 +133,29 @@ namespace Landis.Extension.BiomassHarvest
             foreach (ManagementArea mgmtArea in managementAreas)
                 mgmtArea.FinishInitialization();
 
+            if (parameters.ExposeManagementAreasForSites)
+            {
+                ModelCore.UI.WriteLine("   Exposing management areas for sites...");
+                SiteVars.ManagementArea.SiteValues = null;
+                foreach (var managementArea in managementAreas)
+                {
+                    foreach (var stand in managementArea)
+                    {
+                        foreach (var site in stand)
+                        {
+                            // modelCore.UI.WriteLine(
+                            //     $"      Site ({site.Location.Row}, {site.Location.Column}) in the MA-{managementArea.MapCode}");
+                            SiteVars.ManagementArea[site] = managementArea;
+                        }
+                    }
+                }
+            }
+
             prescriptionMaps = new PrescriptionMaps(parameters.PrescriptionMapNames);
             nameTemplate = parameters.PrescriptionMapNames;
 
             if (parameters.BiomassMapNames != null)
                 biomassMaps = new BiomassMaps(parameters.BiomassMapNames);
-
-
         }
 
         //---------------------------------------------------------------------
