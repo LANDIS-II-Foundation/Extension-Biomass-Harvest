@@ -18,6 +18,5 @@ namespace Landis.Extension.BiomassHarvest
         {
             get;
         }
-
     }
 }

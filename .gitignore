@@ -158,3 +158,5 @@ $RECYCLE.BIN/
 # LANDIS-II
 /src/lib/*.dll
 /src/.vs
+
+copyfilestolandis.flag

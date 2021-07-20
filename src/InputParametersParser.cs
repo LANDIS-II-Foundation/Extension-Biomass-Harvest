@@ -8,10 +8,7 @@ using Landis.Core;
 using Landis.Library.BiomassHarvest;
 using Landis.Library.HarvestManagement;
 using Landis.Library.SiteHarvest;
-using Landis.Library.Succession;
 using System.Collections.Generic;
-using System.Text;
-
 
 namespace Landis.Extension.BiomassHarvest
 {
@@ -117,11 +114,12 @@ namespace Landis.Extension.BiomassHarvest
         /// </remarks>
         protected override void ReadBiomassMaps(InputParameters baseParameters)
         {
+            // Get the biomass harvest implementation of the InputParameters so we can set the biomassMaps property 
+            Parameters parameters = baseParameters as Parameters;
+
             InputVar<string> biomassMapNames = new InputVar<string>("BiomassMaps");
             if (ReadOptionalVar(biomassMapNames))
             {
-                // Get the biomass harvest implementation of the InputParameters so we can set the biomassMaps property 
-                Parameters parameters = baseParameters as Parameters;
                 parameters.BiomassMapNames = biomassMapNames.Value;
             }
         }

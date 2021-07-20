@@ -14,7 +14,7 @@ namespace Landis.Extension.BiomassHarvest
         : InputParameters, IParameters
     {
         private string biomassMapNamesTemplate;
-
+ 
         //---------------------------------------------------------------------
         /// <summary>
         /// Template for pathnames for biomass-removed maps.
