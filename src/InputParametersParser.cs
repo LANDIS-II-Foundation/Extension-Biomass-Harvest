@@ -122,12 +122,6 @@ namespace Landis.Extension.BiomassHarvest
             {
                 parameters.BiomassMapNames = biomassMapNames.Value;
             }
-
-            InputVar<bool> exposeManagementAreasForSites = new InputVar<bool>("ExposeManagementAreasForSites");
-            if (ReadOptionalVar(exposeManagementAreasForSites))
-            {
-                parameters.ExposeManagementAreasForSites = exposeManagementAreasForSites.Value;
-            }
         }
     }
 }

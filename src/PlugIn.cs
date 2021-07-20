@@ -133,20 +133,17 @@ namespace Landis.Extension.BiomassHarvest
             foreach (ManagementArea mgmtArea in managementAreas)
                 mgmtArea.FinishInitialization();
 
-            if (parameters.ExposeManagementAreasForSites)
+            ModelCore.UI.WriteLine("   Exposing management areas for sites...");
+            SiteVars.ManagementArea.SiteValues = null;
+            foreach (var managementArea in managementAreas)
             {
-                ModelCore.UI.WriteLine("   Exposing management areas for sites...");
-                SiteVars.ManagementArea.SiteValues = null;
-                foreach (var managementArea in managementAreas)
+                foreach (var stand in managementArea)
                 {
-                    foreach (var stand in managementArea)
+                    foreach (var site in stand)
                     {
-                        foreach (var site in stand)
-                        {
-                            // modelCore.UI.WriteLine(
-                            //     $"      Site ({site.Location.Row}, {site.Location.Column}) in the MA-{managementArea.MapCode}");
-                            SiteVars.ManagementArea[site] = managementArea;
-                        }
+                        // modelCore.UI.WriteLine(
+                        //     $"      Site ({site.Location.Row}, {site.Location.Column}) in the MA-{managementArea.MapCode}");
+                        SiteVars.ManagementArea[site] = managementArea;
                     }
                 }
             }

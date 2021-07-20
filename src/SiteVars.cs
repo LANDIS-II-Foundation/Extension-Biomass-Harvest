@@ -41,11 +41,8 @@ namespace Landis.Extension.BiomassHarvest
 
             PlugIn.ModelCore.RegisterSiteVar(SiteVars.CapacityReduction, "Harvest.CapacityReduction");
 
-            if (parameters.ExposeManagementAreasForSites)
-            {
-                managementArea = PlugIn.ModelCore.Landscape.NewSiteVar<ManagementArea>();
-                PlugIn.ModelCore.RegisterSiteVar(SiteVars.ManagementArea, "BiomassHarvest.ManagementArea");
-            }
+            managementArea = PlugIn.ModelCore.Landscape.NewSiteVar<ManagementArea>();
+            PlugIn.ModelCore.RegisterSiteVar(SiteVars.ManagementArea, "BiomassHarvest.ManagementArea");
 
             if (cohorts == null)
             {
