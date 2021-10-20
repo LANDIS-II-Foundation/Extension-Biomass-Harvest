@@ -398,7 +398,7 @@ namespace Landis.Extension.BiomassHarvest
             el.Stand = stand.MapCode;
             el.EventID = stand.EventId;
             el.StandAge = stand.Age;
-            el.StandRank = Convert.ToInt32(stand.HarvestedRank);
+            el.StandRank = stand.HarvestedRank;
             el.NumberOfSites = stand.SiteCount;
             el.HarvestedSites = damagedSites;
             el.MgBiomassRemoved = biomassRemoved;

@@ -30,7 +30,7 @@ namespace Landis.Extension.BiomassHarvest
         public int StandAge { set; get; }
 
         [DataFieldAttribute(Desc = "Stand Rank")]
-        public int StandRank { set; get; }
+        public double StandRank { set; get; }
 
         [DataFieldAttribute(Unit = FieldUnits.Count, Desc = "Number of Sites")]
         public int NumberOfSites { set; get; }
