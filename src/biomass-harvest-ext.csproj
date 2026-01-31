@@ -4,12 +4,12 @@
     <AssemblyCompany>Landis-II-Foundation</AssemblyCompany>
     <AssemblyCopyright>Landis-II-Foundation</AssemblyCopyright>
     <RootNamespace>Landis.Extension.BiomassHarvest</RootNamespace>
-    <AssemblyName>Landis.Extension.BiomassHarvest-v6</AssemblyName>
-    <AssemblyTitle>Landis.Extension.BiomassHarvest-v6</AssemblyTitle>
-    <AssemblyProduct>Landis.Extension.BiomassHarvest-v6</AssemblyProduct>
-    <AssemblyVersion>6.0.0</AssemblyVersion>
-    <Version>6.0.0</Version>
-    <FileVersion>6.0.0.0</FileVersion>
+    <AssemblyName>Landis.Extension.BiomassHarvest-v7</AssemblyName>
+    <AssemblyTitle>Landis.Extension.BiomassHarvest-v7</AssemblyTitle>
+    <AssemblyProduct>Landis.Extension.BiomassHarvest-v7</AssemblyProduct>
+    <AssemblyVersion>7.0.0</AssemblyVersion>
+    <Version>7.0.0</Version>
+    <FileVersion>7.0.0.0</FileVersion>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <RepositoryUrl>https://github.com/LANDIS-II-Foundation/Extension-Biomass-Harvest</RepositoryUrl>
@@ -31,23 +31,18 @@
   </ItemGroup>
   
   <ItemGroup>
-    <Reference Include="Landis.Library.BiomassHarvest-v3">
-      <HintPath>lib\Landis.Library.BiomassHarvest-v3.dll</HintPath>
+    <Reference Include="Landis.Library.BiomassHarvest-v4">
     </Reference>
-    <Reference Include="Landis.Library.HarvestManagement-v4">
-      <HintPath>lib\Landis.Library.HarvestManagement-v4.dll</HintPath>
+    <Reference Include="Landis.Library.HarvestManagement-v5">
     </Reference>
     <Reference Include="Landis.Library.Metadata-v2">
-      <HintPath>lib\Landis.Library.Metadata-v2.dll</HintPath>
     </Reference>
-    <Reference Include="Landis.Library.SiteHarvest-v2">
-      <HintPath>lib\Landis.Library.SiteHarvest-v2.dll</HintPath>
+    <Reference Include="Landis.Library.SiteHarvest-v3">
     </Reference>
     <Reference Include="Landis.Library.Succession-v9">
       <HintPath>lib\Landis.Library.Succession-v9.dll</HintPath>
     </Reference>
-    <Reference Include="Landis.Library.UniversalCohorts-v1">
-      <HintPath>lib\Landis.Library.UniversalCohorts-v1.dll</HintPath>
+    <Reference Include="Landis.Library.UniversalCohorts-v2">
     </Reference>
   </ItemGroup>
 
