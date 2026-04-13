@@ -626,3 +626,52 @@ testings/Core8-Harvest6.0-BookChapter14/outputs-biomass/biomass-woody-0.tif
 testings/Core8-Harvest6.0-BookChapter14/outputs-biomass/biomass-woody-10.tif
 testings/Core8-Harvest6.0-BookChapter14/outputs-biomass/biomass-woody-15.tif
 testings/Core8-Harvest6.0-BookChapter14/outputs-biomass/biomass-woody-5.tif
+testings/Core8-Harvest7.0/Biomass-succession-log.csv
+testings/Core8-Harvest7.0/biomass-succession/biomass-anpp-15.tif
+testings/Core8-Harvest7.0/biomass-succession/biomass-anpp-20.tif
+testings/Core8-Harvest7.0/biomass-succession/biomass-anpp-25.tif
+testings/Core8-Harvest7.0/biomass-succession/biomass-anpp-30.tif
+testings/Core8-Harvest7.0/biomass-succession/biomass-anpp-35.tif
+testings/Core8-Harvest7.0/biomass-succession/biomass-anpp-40.tif
+testings/Core8-Harvest7.0/biomass-succession/biomass-anpp-45.tif
+testings/Core8-Harvest7.0/biomass-succession/biomass-anpp-5.tif
+testings/Core8-Harvest7.0/biomass-succession/biomass-anpp-50.tif
+testings/Core8-Harvest7.0/harvest/biomass-harvest-event-log.csv
+testings/Core8-Harvest7.0/harvest/biomass-harvest-prescripts-10.tif
+testings/Core8-Harvest7.0/harvest/biomass-harvest-prescripts-15.tif
+testings/Core8-Harvest7.0/harvest/biomass-harvest-prescripts-20.tif
+testings/Core8-Harvest7.0/harvest/biomass-harvest-prescripts-25.tif
+testings/Core8-Harvest7.0/harvest/biomass-harvest-prescripts-30.tif
+testings/Core8-Harvest7.0/harvest/biomass-harvest-prescripts-35.tif
+testings/Core8-Harvest7.0/harvest/biomass-harvest-prescripts-40.tif
+testings/Core8-Harvest7.0/harvest/biomass-harvest-prescripts-45.tif
+testings/Core8-Harvest7.0/harvest/biomass-harvest-prescripts-5.tif
+testings/Core8-Harvest7.0/harvest/biomass-harvest-prescripts-50.tif
+testings/Core8-Harvest7.0/harvest/biomass-harvest-summary-log.csv
+testings/Core8-Harvest7.0/harvest/biomass-removed-10.tif
+testings/Core8-Harvest7.0/harvest/biomass-removed-15.tif
+testings/Core8-Harvest7.0/harvest/biomass-removed-20.tif
+testings/Core8-Harvest7.0/harvest/biomass-removed-25.tif
+testings/Core8-Harvest7.0/harvest/biomass-removed-30.tif
+testings/Core8-Harvest7.0/harvest/biomass-removed-35.tif
+testings/Core8-Harvest7.0/harvest/biomass-removed-40.tif
+testings/Core8-Harvest7.0/harvest/biomass-removed-45.tif
+testings/Core8-Harvest7.0/harvest/biomass-removed-5.tif
+testings/Core8-Harvest7.0/harvest/biomass-removed-50.tif
+testings/Core8-Harvest7.0/Metadata/Climate-Library/Spinup-Input-Log_Metadata.xml
+testings/Core8-Harvest7.0/Metadata/Climate-Library/Spinup-Annual-Log_Metadata.xml
+testings/Core8-Harvest7.0/Climate-future-annual-input-log.csv
+testings/Core8-Harvest7.0/Climate-future-monthly-input-log.csv
+testings/Core8-Harvest7.0/Climate-spinup-annual-input-log.csv
+testings/Core8-Harvest7.0/Climate-spinup-monthly-input-log.csv
+testings/Core8-Harvest7.0/Landis-climate-log.txt
+testings/Core8-Harvest7.0/Landis-log.txt
+testings/Core8-Harvest7.0/Metadata/Biomass Harvest/Biomass Harvest.xml
+testings/Core8-Harvest7.0/Metadata/Biomass Harvest/EventLog_Metadata.xml
+testings/Core8-Harvest7.0/Metadata/Biomass Harvest/SummaryLog_Metadata.xml
+testings/Core8-Harvest7.0/Metadata/Biomass Succession/Biomass Succession.xml
+testings/Core8-Harvest7.0/Metadata/Biomass Succession/SummaryLog_Metadata.xml
+testings/Core8-Harvest7.0/Metadata/Climate-Library/Climate-Library.xml
+testings/Core8-Harvest7.0/Metadata/Climate-Library/Future-Annual-Log_Metadata.xml
+testings/Core8-Harvest7.0/Metadata/Climate-Library/Future-Input-Log_Metadata.xml
+testings/Core8-Harvest7.0/Metadata/LANDIS-II v8.0/LANDIS-II v8.0.xml
