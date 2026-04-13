@@ -4,9 +4,9 @@ The Harvest Extension allows for complex, hierarchical management actions, inclu
 
 # Release Notes
 
-- Latest release: Version 6.0 — October 2024
+- Latest release: Version 7.0 — April 2026
 - Full release details found in the User Guide and on GitHub.
-- [View User Guide](https://github.com/LANDIS-II-Foundation/Extension-Biomass-Harvest/blob/master/docs/LANDIS-II%20Harvest%20v6%20User%20Guide.pdf).
+- [View User Guide](https://github.com/LANDIS-II-Foundation/Extension-Biomass-Harvest/blob/master/docs/LANDIS-II%20Harvest%20v7%20User%20Guide.pdf).
 - Copyright: The LANDIS-II Foundation
 
 # Requirements
@@ -18,11 +18,11 @@ You need:
 
 # Download and Install the Extension
 
-- The latest version can be [downloaded from GitHub](https://github.com/LANDIS-II-Foundation/Extension-Biomass-Harvest/blob/master/deploy/installer/LANDIS-II-V8%20Biomass%20Harvest%206.0-setup.exe). (Look for the download icon in the upper right corner.) Launch the installer.
+- The latest version can be [downloaded from GitHub](https://github.com/LANDIS-II-Foundation/Extension-Biomass-Harvest/blob/master/deploy/installer/LANDIS-II-V8%20Biomass%20Harvest%207.0-setup.exe). (Look for the download icon in the upper right corner.) Launch the installer.
 
 # Example Files
 
-Example files can be [downloaded from GitHub](https://downgit.github.io/#/home?url=https://github.com/LANDIS-II-Foundation/Extension-Biomass-Harvest/tree/master/testings/Core8-Harvest6.0).
+Example files can be [downloaded from GitHub](https://downgit.github.io/#/home?url=https://github.com/LANDIS-II-Foundation/Extension-Biomass-Harvest/tree/master/testings/Core8-Harvest7.0).
 
 # Citation
 
