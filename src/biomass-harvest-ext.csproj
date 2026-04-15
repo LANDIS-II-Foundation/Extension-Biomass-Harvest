@@ -32,17 +32,22 @@
   
   <ItemGroup>
     <Reference Include="Landis.Library.BiomassHarvest-v4">
+    <HintPath>lib\Landis.Library.BiomassHarvest-v4.dll</HintPath>
     </Reference>
     <Reference Include="Landis.Library.HarvestManagement-v5">
+    <HintPath>lib\Landis.Library.HarvestManagement-v5.dll</HintPath>
     </Reference>
     <Reference Include="Landis.Library.Metadata-v2">
+     <HintPath>lib\Landis.Library.Metadata-v2.dll</HintPath>
     </Reference>
     <Reference Include="Landis.Library.SiteHarvest-v3">
+    <HintPath>lib\Landis.Library.SiteHarvest-v3.dll</HintPath>
     </Reference>
-    <Reference Include="Landis.Library.Succession-v9">
-      <HintPath>lib\Landis.Library.Succession-v9.dll</HintPath>
+    <Reference Include="Landis.Library.Succession-v10">
+      <HintPath>lib\Landis.Library.Succession-v10.dll</HintPath>
     </Reference>
     <Reference Include="Landis.Library.UniversalCohorts-v2">
+    <HintPath>lib\Landis.Library.UniversalCohorts-v2.dll</HintPath>
     </Reference>
   </ItemGroup>
 
