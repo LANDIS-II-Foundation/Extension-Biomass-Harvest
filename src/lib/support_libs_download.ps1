@@ -1,6 +1,5 @@
 # LANDIS-II support library GitHub URL
-# $master = "https://github.com/LANDIS-II-Foundation/Support-Library-Dlls-v8/raw/main/"
-$master = "https://github.com/rmscheller/Support-Library-Dlls-v8/raw/main/"
+$master = "https://github.com/LANDIS-II-Foundation/Support-Library-Dlls-v8/raw/main/"
 
 
 #************************************************
@@ -11,7 +10,7 @@ $dlls = "Landis.Library.BiomassHarvest-v4.dll",
 "Landis.Library.HarvestManagement-v5.dll",
 "Landis.Library.SiteHarvest-v3.dll",
 "Landis.Library.Metadata-v2.dll",
-"Landis.Library.Succession-v9.dll",
+"Landis.Library.Succession-v10.dll",
 "Landis.Library.UniversalCohorts-v2.dll"
 #************************************************
 
